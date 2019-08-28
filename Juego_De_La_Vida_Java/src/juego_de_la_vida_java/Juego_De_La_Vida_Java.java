@@ -14,11 +14,22 @@ public class Juego_De_La_Vida_Java {
     /**
      * @param args the command line arguments
      */
+    static int [][] matrix;
     public static void main(String[] args) {
         // TODO code application logic here
+        crearTabla(0,0);
     }
+    
     public static boolean crearTabla(int row, int col){
-        return true;
+        matrix = new int[row][col];
+        boolean resp;
+        if(matrix.length >= 1)
+        {
+            resp = true;
+        }else{
+            resp = false;
+        }
+        return resp;
     }
     
 }

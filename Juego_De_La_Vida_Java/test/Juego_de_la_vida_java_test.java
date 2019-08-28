@@ -38,8 +38,8 @@ public class Juego_de_la_vida_java_test {
     }
     @Test
     public void testCrearTablero(){
-        int row = 1;
-        int col = 2;
+        int row = 10;
+        int col = 10;
         boolean respuesta = Juego_De_La_Vida_Java.crearTabla(row,col);
         assertEquals(true, respuesta);
     }
