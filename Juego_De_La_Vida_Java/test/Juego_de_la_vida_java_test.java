@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import juego_de_la_vida_java.Juego_De_La_Vida_Java;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
