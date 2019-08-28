@@ -17,5 +17,8 @@ public class Juego_De_La_Vida_Java {
     public static void main(String[] args) {
         // TODO code application logic here
     }
+    public static boolean crearTabla(int row, int col){
+        return true;
+    }
     
 }
