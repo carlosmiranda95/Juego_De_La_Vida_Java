@@ -5,6 +5,8 @@
  */
 package juego_de_la_vida_java;
 
+import java.util.Random;
+
 /**
  *
  * @author Carlos Miranda Rocha
@@ -17,7 +19,8 @@ public class Juego_De_La_Vida_Java {
     static int [][] matrix;
     public static void main(String[] args) {
         // TODO code application logic here
-        crearTabla(0,0);
+        //crearTabla(0,0);
+        poblarCelulasIniciales(5);
     }
     
     public static boolean crearTabla(int row, int col){
@@ -31,5 +34,22 @@ public class Juego_De_La_Vida_Java {
         }
         return resp;
     }
-    
+    public static boolean poblarCelulasIniciales(int cantidadcelulas){
+        boolean respuesta = false;
+        int iterador;
+        Random objRandom = new Random();
+        int rows = objRandom.nextInt(cantidadcelulas);
+        int cols = objRandom.nextInt(cantidadcelulas);
+        if(crearTabla(rows,cols)){
+            for (iterador = 0; iterador <= cantidadcelulas; iterador++) {
+                    int x = objRandom.nextInt(rows);
+                    int y = objRandom.nextInt(cols);
+                    matrix[x][y] = 1;    
+            }
+            if(iterador >= 1){
+                respuesta = true;
+            }
+        }
+        return respuesta;
+    }
 }

@@ -46,8 +46,8 @@ public class Juego_de_la_vida_java_test {
     }
     @Test
     public void testPoblarCelulasIniciales(){
-        int cantidadcelulas = 5;
-        boolean respuesta = Juego_De_La_Vida_Java.PoblarCelulasIniciales(cantidadcelulas);
+        int cantidadcelulas = 2;
+        boolean respuesta = Juego_De_La_Vida_Java.poblarCelulasIniciales(cantidadcelulas);
         assertEquals(true, respuesta);
     }
     // TODO add test methods here.
