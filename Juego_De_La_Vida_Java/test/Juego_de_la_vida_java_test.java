@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import java.util.Random;
 import juego_de_la_vida_java.Juego_De_La_Vida_Java;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -41,6 +42,12 @@ public class Juego_de_la_vida_java_test {
         int row = 10;
         int col = 10;
         boolean respuesta = Juego_De_La_Vida_Java.crearTabla(row,col);
+        assertEquals(true, respuesta);
+    }
+    @Test
+    public void testPoblarCelulasIniciales(){
+        int cantidadcelulas = 5;
+        boolean respuesta = Juego_De_La_Vida_Java.PoblarCelulasIniciales(cantidadcelulas);
         assertEquals(true, respuesta);
     }
     // TODO add test methods here.
